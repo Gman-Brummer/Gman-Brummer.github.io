@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Building Hub - Home</title>
+    <title>PC Building Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,13 +30,18 @@
             font-size: 18px;
             font-weight: bold;
             transition: color 0.3s, transform 0.2s;
+            cursor: pointer;
         }
         nav a:hover {
             color: #ffffff;
             transform: scale(1.1);
         }
-        main {
+        .section {
+            display: none;
             padding: 40px 20px;
+        }
+        #home {
+            display: block;
         }
         figure {
             margin: 20px auto;
@@ -45,6 +50,7 @@
         figure img {
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 300px;
         }
         footer {
             margin-top: 40px;
@@ -53,29 +59,89 @@
             box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>PC Building Hub</h1>
         <nav>
-            <a href="index.html">🏠 Home</a>
-            <a href="who.html">👤 Who</a>
-            <a href="what.html">💻 What</a>
-            <a href="when.html">📅 When</a>
-            <a href="where.html">📍 Where</a>
-            <a href="how.html">🔧 How</a>
-            <a href="why.html">❓ Why</a>
-            <a href="ai_prompts.html">🤖 AI Prompts</a>
+            <a onclick="showSection('home')">🏠 Home</a>
+            <a onclick="showSection('who')">👤 Who</a>
+            <a onclick="showSection('what')">💻 What</a>
+            <a onclick="showSection('when')">📅 When</a>
+            <a onclick="showSection('where')">📍 Where</a>
+            <a onclick="showSection('how')">🔧 How</a>
+            <a onclick="showSection('why')">❓ Why</a>
+            <a onclick="showSection('ai_prompts')">🤖 AI Prompts</a>
         </nav>
     </header>
     
     <main>
-        <h2>Welcome to PC Building Hub</h2>
-        <p>Your ultimate guide to assembling a custom PC.</p>
-        <figure>
-            <img src="images/pc_build.jpg" alt="Custom-built gaming PC" width="300">
-            <figcaption>A high-performance gaming PC.</figcaption>
-        </figure>
+        <section id="home" class="section">
+            <h2>Welcome to PC Building Hub</h2>
+            <p>Your ultimate guide to assembling a custom PC.</p>
+        </section>
+        <section id="who" class="section">
+            <h2>Who Builds PCs?</h2>
+            <p>PC building is popular among gamers, professionals, and tech enthusiasts.</p>
+            <figure>
+                <img src="images/pc_builder.jpg" alt="A person assembling a PC">
+                <figcaption>A dedicated PC builder at work.</figcaption>
+            </figure>
+        </section>
+        <section id="what" class="section">
+            <h2>What is PC Building?</h2>
+            <p>PC building is the process of assembling computer components.</p>
+            <figure>
+                <img src="images/pc_parts.jpg" alt="Various PC components">
+                <figcaption>PC parts ready to be assembled.</figcaption>
+            </figure>
+        </section>
+        <section id="when" class="section">
+            <h2>When to Build a PC?</h2>
+            <p>Knowing when to build a PC depends on market trends and budget.</p>
+            <figure>
+                <img src="images/pc_build_timing.jpg" alt="A chart of PC component price trends">
+                <figcaption>Tracking price trends to find the best time to build.</figcaption>
+            </figure>
+        </section>
+        <section id="where" class="section">
+            <h2>Where to Get PC Parts?</h2>
+            <p>PC parts can be purchased from online retailers, local stores, and second-hand marketplaces.</p>
+            <figure>
+                <img src="images/pc_stores.jpg" alt="A selection of PC parts in a store">
+                <figcaption>A local store offering PC components.</figcaption>
+            </figure>
+        </section>
+        <section id="how" class="section">
+            <h2>How to Build a PC?</h2>
+            <p>Building a PC involves selecting components, assembling them correctly, and installing software.</p>
+            <figure>
+                <img src="images/building_steps.jpg" alt="Step-by-step PC building">
+                <figcaption>A step-by-step guide to assembling a custom PC.</figcaption>
+            </figure>
+        </section>
+        <section id="why" class="section">
+            <h2>Why Build a PC?</h2>
+            <p>Building a PC allows customization, cost efficiency, and higher performance than pre-built options.</p>
+            <figure>
+                <img src="images/why_build.jpg" alt="Custom PC setup">
+                <figcaption>A custom-built PC optimized for gaming and work.</figcaption>
+            </figure>
+        </section>
+        <section id="ai_prompts" class="section">
+            <h2>AI Prompts</h2>
+            <p>This section includes AI-generated images and some structuring assistance, but most of the content and layout was created manually.</p>
+            <ul>
+                <li><strong>Image Generation:</strong> Used AI to create a high-resolution image of a custom-built PC.</li>
+                <li><strong>Basic Structuring:</strong> Some guidance was taken for CSS layout, but all design choices were manually adjusted.</li>
+            </ul>
+        </section>
     </main>
     
     <footer>
