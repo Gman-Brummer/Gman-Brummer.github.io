@@ -31,6 +31,7 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
         }
         main {
             padding: 2em;
@@ -42,6 +43,7 @@
             border-radius: 8px;
             max-width: 800px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            display: none;
         }
         img {
             width: 80%;
@@ -56,20 +58,37 @@
             padding: 1em;
             margin-top: 2em;
         }
+        .active {
+            display: block;
+        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('what'); // Show "What is a PC?" by default
+        });
+    </script>
 </head>
 <body>
     <header>
         <h1>PC Building Guide</h1>
         <nav>
-            <a href="#what">What is a PC?</a>
-            <a href="#why">Why Build One?</a>
-            <a href="#how">How to Build</a>
+            <a onclick="showSection('what')">🏠 What</a> |
+            <a onclick="showSection('who')">👤 Who</a> |
+            <a onclick="showSection('when')">⏳ When</a> |
+            <a onclick="showSection('where')">📍 Where</a> |
+            <a onclick="showSection('how')">🛠️ How</a> |
+            <a onclick="showSection('why')">❓ Why</a> |
+            <a onclick="showSection('ai-prompts')">🤖 AI Prompts</a>
         </nav>
     </header>
 
     <main>
-        <section id="what">
+        <section id="what" class="active">
             <h2>What is a PC?</h2>
             <figure>
                 <img src="images/pc-setup.jpg" alt="A modern gaming PC setup">
@@ -77,27 +96,65 @@
             </figure>
             <p>A PC (Personal Computer) is a multi-purpose device used for gaming, work, and entertainment. It consists of essential components like a CPU, GPU, motherboard, and storage.</p>
         </section>
-        
-        <section id="why">
-            <h2>Why Build One?</h2>
+
+        <section id="who">
+            <h2>Who Builds PCs?</h2>
             <figure>
-                <img src="images/pc-components.jpg" alt="Various PC components laid out">
-                <figcaption>Customizing your PC allows better performance</figcaption>
+                <img src="images/pc-builder.jpg" alt="A PC builder at work">
+                <figcaption>Enthusiasts and professionals build custom PCs.</figcaption>
             </figure>
-            <p>Building a PC allows customization, better performance, and cost efficiency compared to pre-built systems.</p>
+            <p>PC building is popular among gamers, IT professionals, and DIY enthusiasts who want customized performance.</p>
         </section>
-        
+
+        <section id="when">
+            <h2>When is the Best Time to Build?</h2>
+            <figure>
+                <img src="images/pc-sales.jpg" alt="A PC hardware sale">
+                <figcaption>Best time to buy parts is during sales events.</figcaption>
+            </figure>
+            <p>Prices drop during Black Friday, Cyber Monday, and back-to-school seasons.</p>
+        </section>
+
+        <section id="where">
+            <h2>Where to Buy PC Parts?</h2>
+            <figure>
+                <img src="images/pc-store.jpg" alt="A PC hardware store">
+                <figcaption>Buy PC components from trusted retailers.</figcaption>
+            </figure>
+            <p>Parts are available at online retailers like Amazon, Newegg, and Micro Center.</p>
+        </section>
+
         <section id="how">
-            <h2>How to Build</h2>
+            <h2>How to Build a PC?</h2>
             <figure>
                 <img src="images/pc-building-process.jpg" alt="Step-by-step PC building process">
-                <figcaption>Step-by-step assembly of a PC</figcaption>
+                <figcaption>Step-by-step assembly of a PC.</figcaption>
             </figure>
-            <p>Assembling a PC involves selecting compatible parts, installing them into a case, and configuring the software for optimal performance.</p>
+            <p>Assembling a PC involves selecting compatible parts, installing them into a case, and configuring the software.</p>
+        </section>
+
+        <section id="why">
+            <h2>Why Build a PC?</h2>
+            <figure>
+                <img src="images/pc-performance.jpg" alt="A powerful gaming PC">
+                <figcaption>Building a PC gives full control over performance.</figcaption>
+            </figure>
+            <p>Customization, performance, and long-term value make PC building worthwhile.</p>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts</h2>
+            <p><em>Prompt used for images:</em> "Generate a high-quality image of a custom-built PC with RGB lighting."</p>
         </section>
     </main>
 
     <footer>
+        <p>Designed by <a href="BrummerWebSolutions.com.html">Brummer Web Solutions</a></p>
+        <p>
+            <a href="https://validator.w3.org/" target="_blank">HTML Validation</a> |
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a> |
+            <a href="https://wave.webaim.org/" target="_blank">Accessibility Check</a>
+        </p>
         <p>&copy; 2025 PC Building Guide. Your ultimate guide to custom PCs.</p>
     </footer>
 </body>
