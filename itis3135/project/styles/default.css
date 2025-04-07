@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 40px;
+  }
+  
+  header {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1c2b3a;
+    margin-top: 10px;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #3d566e;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .hero-img {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2, h3 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2d3e50;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  /* Leader and DLC cards */
+  .leader-list, .dlc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .leader, .dlc {
+    background-color: #eef2f5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .leader img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
