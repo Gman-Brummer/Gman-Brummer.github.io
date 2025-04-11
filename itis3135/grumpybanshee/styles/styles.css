@@ -44,4 +44,11 @@ body {
   footer em {
     font-style: italic;
   }
+  .about-image {
+    display: block;
+    margin: 2rem auto;
+    width: 300px;
+    border: 4px solid #ff4e4e;
+    border-radius: 10px;
+  }
   
