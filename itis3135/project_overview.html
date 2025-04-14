@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Overview | Civ 6 Strategy Site</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Project Overview: Civilization VI Strategy Hub</h2>
+
+    <section>
+      <h3>Overview</h3>
+      <p>This project is a multi-page educational and interactive website centered around the video game Civilization VI. Its purpose is to provide new and returning players with strategy guides, leader breakdowns, build order tips, and tools to enhance gameplay experience. This includes a dynamic tech tree viewer and a Civ selector quiz.</p>
+      <p>The intended users are Civ 6 players ranging from beginners to intermediate strategists looking to improve their gameplay or explore different playstyles.</p>
+      <p>The site includes a homepage, a leaders guide, a dynamic tech tree, a strategy resources section, and a contact/about page with community links.</p>
+    </section>
+
+    <section>
+      <h3>Client Information</h3>
+      <ul>
+        <li><strong>Client Name:</strong> Greyson Brummer</li>
+        <li><strong>Organization:</strong> Brummer Web Solutions</li>
+        <li><strong>Email:</strong> [private]</li>
+        <li><strong>Phone:</strong> [private]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Wireframe</h3>
+      <figure>
+        <img src="images/wireframe.png" alt="Homepage Wireframe">
+        <figcaption>Homepage wireframe built using draw.io.</figcaption>
+      </figure>
+      <p><a href="https://drive.google.com/file/d/your_wireframe_link/view">View Full Wireframe</a></p>
+    </section>
+
+    <section>
+      <h3>Site Map</h3>
+      <figure>
+        <img src="images/sitemap.png" alt="Civ 6 Site Map">
+        <figcaption>Site map showing five-page layout and internal navigation.</figcaption>
+      </figure>
+      <p><a href="https://drive.google.com/file/d/your_sitemap_link/view">View Site Map on Draw.io</a></p>
+    </section>
+
+    <section>
+      <h3>Page Designs</h3>
+      <ul>
+        <li><strong>index.html</strong> – Home page  
+          <br>Purpose: Introduce site and feature popular content  
+          <br>Audience: All users  
+          <br>Content: Welcome section, featured guides  
+          <br>Buttons: Scroll to guide, visit leaders page  
+        </li>
+
+        <li><strong>leaders.html</strong> – Leader Guide  
+          <br>Purpose: Provide strategy breakdowns by leader  
+          <br>Audience: Intermediate players  
+          <br>Content: Interactive list of leaders  
+          <br>Interactivity: Filters and dropdowns  
+        </li>
+
+        <li><strong>techtree.html</strong> – Tech Tree Explorer  
+          <br>Purpose: Show tech/civic tree progression  
+          <br>Audience: All players  
+          <br>Content: Visual tree, interactive pop-ups  
+          <br>JS Use: AJAX loading of tree data  
+        </li>
+
+        <li><strong>strategy.html</strong> – Strategy Resources  
+          <br>Purpose: Share tips, guides, videos  
+          <br>Audience: All players  
+          <br>Content: Embedded YouTube playlists, curated links  
+        </li>
+
+        <li><strong>contact.html</strong> – Contact/About  
+          <br>Purpose: Allow feedback + display dev info  
+          <br>Audience: Users/fans  
+          <br>Form: Name, email, message with validation  
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Dynamic Functionality</h3>
+      <ul>
+        <li><strong>leaders.html:</strong> jQuery-UI dropdown to filter leaders by ability/playstyle.</li>
+        <li><strong>techtree.html:</strong> AJAX loads and displays JSON-based tree layout with highlight on hover.</li>
+        <li><strong>contact.html:</strong> Custom JavaScript form validation + jQuery form animations.</li>
+        <li><strong>strategy.html:</strong> jQuery image carousel plugin for rotating guide images.</li>
+      </ul>
+      <p>Example references:  
+        <a href="https://www.civilopedia.net">Civilopedia-style layout</a>,  
+        <a href="https://jqueryui.com/selectmenu/">jQuery-UI Dropdown</a>,  
+        <a href="https://jqueryui.com/accordion/">Accordion-style guide layout</a>
+      </p>
+    </section>
+
+    <section>
+      <h3>Credits & Notes</h3>
+      <p>Design inspired by Civilization VI menus and layout ideas from Civilopedia.net.</p>
+      <p>Draw.io used for sitemap and wireframe, jQuery and jQuery-UI libraries referenced for interaction features.</p>
+      <p>Project by Greyson Brummer, April 14, 2025 – 12:45 PM.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
