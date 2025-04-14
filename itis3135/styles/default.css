@@ -76,5 +76,21 @@ footer a {
     margin-left: 0.5em;
     color: #999;
 }
+.footer-credit {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.footer-credit li {
+    color: #ccc;
+}
+
+.footer-credit a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 
