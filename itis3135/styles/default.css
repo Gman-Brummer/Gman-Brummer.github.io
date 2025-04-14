@@ -47,11 +47,12 @@ figure img {
 figcaption {
     font-style: italic;
 }
+
 footer a {
     color: #fff;
-    margin: 0 1em;
     text-decoration: none;
 }
+
 .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -63,14 +64,17 @@ footer a {
 }
 
 .footer-links li {
-    position: relative;
+    display: flex;
+    align-items: center;
     padding: 0 0.5em;
+    position: relative;
 }
+
 
 .footer-links li:not(:last-child)::after {
     content: "|";
-    position: absolute;
-    right: 0;
+    margin-left: 0.5em;
     color: #999;
 }
+
 
