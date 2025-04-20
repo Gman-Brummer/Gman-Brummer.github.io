@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greyson Brummer: HTML Tables</title>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>HTML Tables Assignment</h2>
+
+    <h3>My Tabular Data</h3>
+    <ol>
+      <li>Christian McCaffrey - cmc@grumpybanshee.com - 6 years</li>
+      <li>Justin Jefferson - jjettas@vikingsmail.com - 4 years</li>
+      <li>Patrick Mahomes - pmagic@kccheifs.org - 7 years</li>
+      <li>Joe Burrow - joeyb@bengalsnation.net - 3 years</li>
+      <li>Aaron Donald - ad99@ramsforce.com - 10 years</li>
+      <li>Tyreek Hill - cheetah@miamifins.org - 8 years</li>
+      <li>Josh Allen - joshua@buffalobills.com - 5 years</li>
+      <li>Myles Garrett - mg@browns.net - 7 years</li>
+    </ol>
+
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Christian McCaffrey</td><td>cmc@grumpybanshee.com</td><td>6</td></tr>
+        <tr><td>Justin Jefferson</td><td>jjettas@vikingsmail.com</td><td>4</td></tr>
+        <tr><td>Patrick Mahomes</td><td>pmagic@kccheifs.org</td><td>7</td></tr>
+        <tr><td>Joe Burrow</td><td>joeyb@bengalsnation.net</td><td>3</td></tr>
+        <tr><td>Aaron Donald</td><td>ad99@ramsforce.com</td><td>10</td></tr>
+        <tr><td>Tyreek Hill</td><td>cheetah@miamifins.org</td><td>8</td></tr>
+        <tr><td>Josh Allen</td><td>joshua@buffalobills.com</td><td>5</td></tr>
+        <tr><td>Myles Garrett</td><td>mg@browns.net</td><td>7</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <figcaption>Grumpy Banshee Employee Information</figcaption>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Years of Service</th>
+            <th>Monthly Salary ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td rowspan="2">Running Banshees</td>
+              <td headers="name">Christian McCaffrey</td>
+              <td headers="email">cmc@grumpybanshee.com</td>
+              <td headers="years">6</td>
+              <td headers="salary">$1,333,333</td>
+            </tr>
+            <tr>
+              <td headers="name">Justin Jefferson</td>
+              <td headers="email">jjettas@vikingsmail.com</td>
+              <td headers="years">4</td>
+              <td headers="salary">$1,166,667</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Quarterback Wranglers</td>
+              <td headers="name">Patrick Mahomes</td>
+              <td headers="email">pmagic@kccheifs.org</td>
+              <td headers="years">7</td>
+              <td headers="salary">$3,750,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Joe Burrow</td>
+              <td headers="email">joeyb@bengalsnation.net</td>
+              <td headers="years">3</td>
+              <td headers="salary">$4,583,333</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Defensive Spirits</td>
+              <td headers="name">Aaron Donald</td>
+              <td headers="email">ad99@ramsforce.com</td>
+              <td headers="years">10</td>
+              <td headers="salary">$2,625,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Myles Garrett</td>
+              <td headers="email">mg@browns.net</td>
+              <td headers="years">7</td>
+              <td headers="salary">$2,083,333</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Blazing Offense</td>
+              <td headers="name">Tyreek Hill</td>
+              <td headers="email">cheetah@miamifins.org</td>
+              <td headers="years">8</td>
+              <td headers="salary">$2,500,000</td>
+            </tr>
+            <tr>
+              <td headers="name">Josh Allen</td>
+              <td headers="email">joshua@buffalobills.com</td>
+              <td headers="years">5</td>
+              <td headers="salary">$3,583,333</td>
+            </tr>
+            <tr>
+              <th colspan="3">Total Years of Service</th>
+              <td>50</td>
+              <td>$19,624,999</td>
+            </tr>
+        </tbody>
+          
+      </table>
+    </figure>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-include]').forEach(el => {
+      fetch(el.getAttribute('data-include'))
+        .then(res => res.text())
+        .then(data => (el.innerHTML = data));
+    });
+  </script>
+</body>
+</html>
