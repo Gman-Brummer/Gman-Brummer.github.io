@@ -138,8 +138,10 @@ table {
   .footer-validation {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1em;
     margin-top: 1em;
+    flex-wrap: wrap;
   }
   
   .footer-validation img {
@@ -148,6 +150,7 @@ table {
     width: auto;
     border: none;
   }
+  
   
   
   
