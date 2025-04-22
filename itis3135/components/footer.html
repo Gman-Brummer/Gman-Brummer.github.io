@@ -12,14 +12,25 @@
     <li>Page built by <a href="BrummerWebSolution.com/index.html">Brummer Web Solutions</a></li>
 </ul>
 
+
 <div class="footer-validation">
-  <a href="https://validator.w3.org/check?uri=referer">
+  <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
     <img src="https://www.w3.org/Icons/valid-html5" alt="Valid HTML5!">
   </a>
-  <a href="https://jigsaw.w3.org/css-validator/check/referer">
+  <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
     <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
   </a>
 </div>
+
+<script>
+  document.getElementById("validation_link_html").setAttribute(
+    "href", "https://validator.w3.org/check?uri=" + location.href
+  );
+  document.getElementById("validation_link_css").setAttribute(
+    "href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+  );
+</script>
+
 
 
 
