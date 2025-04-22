@@ -18,53 +18,54 @@
     <h3>Time to BYO Intro page — please fill out the form below so we can create your own page.</h3>
 
     <form id="introForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" value="Greyson Brummer" required><br>
-
-      <label for="mascot">Mascot:</label>
-      <input type="text" id="mascot" value="Grumpy Banshee" required><br>
-
-      <label for="image">Upload an image (JPG or PNG):</label>
-      <input type="file" id="image" accept=".jpg, .jpeg, .png" required><br>
-
-      <label for="caption">Image Caption:</label>
-      <input type="text" id="caption" value="This is me being awesome." required><br>
-
-      <label for="personal">Personal Background:</label>
-      <input type="text" id="personal" value="Born and raised in Hillsborough, NC." required><br>
-
-      <label for="professional">Professional Background:</label>
-      <input type="text" id="professional" value="Worked at Home Depot and Myrtle Waves." required><br>
-
-      <label for="academic">Academic Background:</label>
-      <input type="text" id="academic" value="UNC Charlotte CS major with cybersecurity concentration." required><br>
-
-      <label for="webdev">Background in Web Development:</label>
-      <input type="text" id="webdev" value="Learning through ITIS 3135 projects." required><br>
-
-      <label for="platform">Primary Computer Platform:</label>
-      <input type="text" id="platform" value="Windows" required><br>
-
-      <label>Courses Currently Taking:</label>
-      <div id="course-container">
-        <input type="text" name="course" placeholder="e.g., ITIS 3135 - Web App Design" class="course-box">
-      </div>
-      <button type="button" id="addCourse">Add Course</button><br>
-
-      <label for="funny">Funny Thing?</label>
-      <input type="text" id="funny" value="I once debugged CSS in my sleep."><br>
-
-      <label for="other">Anything else?</label>
-      <input type="text" id="other"><br>
-
-      <label>
-        <input type="checkbox" id="agreement" required>
-        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-      </label><br><br>
-
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+      
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" required><br>
+      
+        <label for="image">Upload an image (JPG or PNG):</label>
+        <input type="file" id="image" accept=".jpg, .jpeg, .png" required><br>
+      
+        <label for="caption">Image Caption:</label>
+        <input type="text" id="caption" required><br>
+      
+        <label for="personal">Personal Background:</label>
+        <input type="text" id="personal" required><br>
+      
+        <label for="professional">Professional Background:</label>
+        <input type="text" id="professional" required><br>
+      
+        <label for="academic">Academic Background:</label>
+        <input type="text" id="academic" required><br>
+      
+        <label for="webdev">Background in Web Development:</label>
+        <input type="text" id="webdev" required><br>
+      
+        <label for="platform">Primary Computer Platform:</label>
+        <input type="text" id="platform" required><br>
+      
+        <label>Courses Currently Taking:</label>
+        <div id="course-container">
+          <input type="text" name="course" placeholder="e.g., ITIS 3135 - Web App Design" class="course-box">
+        </div>
+        <button type="button" id="addCourse">Add Course</button><br>
+      
+        <label for="funny">Funny Thing?</label>
+        <input type="text" id="funny"><br>
+      
+        <label for="other">Anything else?</label>
+        <input type="text" id="other"><br>
+      
+        <label>
+          <input type="checkbox" id="agreement" required>
+          I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+        </label><br><br>
+      
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+      
 
     <div id="result" style="display:none;"></div>
   </main>
