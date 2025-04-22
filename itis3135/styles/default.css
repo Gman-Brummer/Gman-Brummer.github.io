@@ -143,9 +143,10 @@ table {
   }
   
   .footer-validation img {
-    height: auto;
-    max-height: 64px;
+    height: 31px;
+    border: none;
   }
+  
   
   
 
