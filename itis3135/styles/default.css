@@ -143,8 +143,8 @@ table {
   }
   
   .footer-validation img {
-    height: 31px;
-    border: none;
+    height: auto;
+    max-height: 64px;
   }
   
   
