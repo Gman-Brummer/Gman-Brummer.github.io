@@ -84,7 +84,7 @@
     margin-top: 40px;
   }
   
-  /* Leader and DLC cards */
+  
   .leader-list, .dlc {
     display: flex;
     flex-wrap: wrap;
@@ -105,3 +105,54 @@
     border-radius: 6px;
     margin-bottom: 10px;
   }
+  
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #1c2b3a;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: #3d566e;
+}
+
+
+figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+figure img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+figure figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+figure figcaption a {
+  color: #2d3e50;
+  text-decoration: underline;
+}
+
+
+ul {
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
