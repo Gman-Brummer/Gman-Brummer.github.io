@@ -58,8 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const other = document.getElementById("other").value;
   
       const courses = [...document.querySelectorAll("input[name='course']")]
-        .map(c => c.value)
-        .filter(c => c.trim() !== "");
+      .map((c) => c.value)
+      .filter((c) => c.trim() !== "");
+
   
       
       const reader = new FileReader();
