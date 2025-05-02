@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><strong>Primary Computer Platform:</strong> ${platform}</li>
             <li><strong>Courses Currently Taking:</strong>
               <ul>
-                ${courses.map(c => `<li><strong>${c}</strong></li>`).join("")}
+                ${courses.map(c => (`<li><strong>${c}</strong></li>`)).join("")}
               </ul>
             </li>
             ${funny ? `<li><strong>Funny Thing:</strong> ${funny}</li>` : ""}
