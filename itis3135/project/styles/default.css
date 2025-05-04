@@ -1,4 +1,4 @@
-html, body, header, nav, main, section, footer, figure, img, ul, li, h1, h2, h3, p {
+html, body, header, nav, main, section, footer, figure, img, ul, li, h1, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,7 +76,7 @@ section {
   margin-bottom: 40px;
 }
 
-h2, h3 {
+.section-title {
   color: #2d3e50;
   margin-bottom: 10px;
 }
@@ -162,5 +162,6 @@ figure figcaption a {
   color: #2d3e50;
   text-decoration: underline;
 }
+
 
 
