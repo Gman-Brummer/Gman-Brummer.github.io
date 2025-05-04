@@ -11,7 +11,7 @@ const topLeaders = [
       civ: "Japan",
       style: "Domination",
       info: "Strong military and districts.",
-      photo: "https://www.pcgames.de/screenshots/1280x1024/2016/07/Civilization-6-Japan-und-Anfuehrer-Hojo-Tokimune-im-Video-vorgestellt.jpg"
+      photo: "https://static.fandomspot.com/images/10/54412/05-tokimune-japan-civ6-screenshot.jpg"
     },
     {
       name: "Pericles",
