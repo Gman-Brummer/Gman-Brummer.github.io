@@ -19,6 +19,12 @@ header {
   text-align: center;
 }
 
+h1 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
 .navbar {
   list-style: none;
   display: flex;
@@ -74,12 +80,6 @@ main {
 
 section {
   margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 2em;
-  color: #2d3e50;
-  margin-bottom: 15px;
 }
 
 h2 {
@@ -143,7 +143,9 @@ footer {
   display: block;
 }
 
-.leader h3 {
+.leader-title {
+  font-size: 1.2em;
+  color: #2d3e50;
   margin-bottom: 15px;
 }
 
@@ -175,6 +177,7 @@ figure figcaption a {
   color: #2d3e50;
   text-decoration: underline;
 }
+
 
 
 
