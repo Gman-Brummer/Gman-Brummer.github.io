@@ -71,10 +71,22 @@ const topLeaders = [
     }
   ];
   
+  function highlightLeader(element) {
+    element.style.backgroundColor = "#fffae6";
+    element.style.border = "2px solid #ffd700";
+    element.style.padding = "10px";
+    element.style.transition = "all 0.5s ease";
+  
+    setTimeout(() => {
+      element.style.backgroundColor = "transparent";
+      element.style.border = "none";
+    }, 1500);
+  }
+  
   function populateDropdown() {
     const dropdown = document.getElementById("leader-select");
   
-    topLeaders.forEach(leader => {
+    topLeaders.forEach((leader) => {
       const option = document.createElement("option");
       option.value = leader.name.toLowerCase().replace(/ /g, "-");
       option.textContent = `${leader.name} (${leader.civ})`;
@@ -89,7 +101,7 @@ const topLeaders = [
     infoDiv.innerHTML = "";
   
     const leader = topLeaders.find(
-      l => l.name.toLowerCase().replace(/ /g, "-") === selected
+      (l) => l.name.toLowerCase().replace(/ /g, "-") === selected
     );
   
     if (leader) {
@@ -108,21 +120,10 @@ const topLeaders = [
     }
   }
   
-  function highlightLeader(element) {
-    element.style.backgroundColor = "#fffae6";
-    element.style.border = "2px solid #ffd700";
-    element.style.padding = "10px";
-    element.style.transition = "all 0.5s ease";
-  
-    setTimeout(() => {
-      element.style.backgroundColor = "transparent";
-      element.style.border = "none";
-    }, 1500);
-  }
-  
   window.addEventListener("DOMContentLoaded", () => {
     populateDropdown();
     document.getElementById("leader-select").addEventListener("change", displayLeaderInfo);
   });
+  
   
   
