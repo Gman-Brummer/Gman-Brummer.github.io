@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 html, body, header, nav, main, section, footer, figure, img, ul, li, h1, h2, h3, p {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   padding-bottom: 40px;
 }
 
-/* Header & Navigation */
 header {
   background-color: #2d3e50;
   color: #fff;
@@ -65,7 +63,6 @@ header nav a:hover {
   background-color: #3d566e;
 }
 
-/* Main Content */
 main {
   padding: 20px;
   max-width: 1000px;
@@ -91,7 +88,6 @@ ul {
   line-height: 1.8;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 15px;
@@ -104,15 +100,15 @@ footer {
   box-sizing: border-box;
 }
 
-/* Leader Cards Layout */
-.leader-list, .dlc {
+.leader-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.leader, .dlc {
+.leader {
   background-color: #eef2f5;
   padding: 15px;
   border-radius: 8px;
@@ -120,19 +116,28 @@ footer {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Leader Images */
 .leader img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 10px;
-  object-fit: cover;
   display: block;
 }
 
-/* Figure Block (e.g., Intro Image) */
+.leader h3 {
+  margin-bottom: 15px;
+}
+
+.leader p {
+  margin-bottom: 10px;
+}
+
 figure {
   text-align: center;
   margin: 20px 0;
@@ -157,4 +162,5 @@ figure figcaption a {
   color: #2d3e50;
   text-decoration: underline;
 }
+
 
