@@ -1,9 +1,9 @@
+/* Reset and Base Styles */
 html, body, header, nav, main, section, footer, figure, img, ul, li, h1, h2, h3, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -13,6 +13,7 @@ body {
   padding-bottom: 40px;
 }
 
+/* Header & Navigation */
 header {
   background-color: #2d3e50;
   color: #fff;
@@ -26,6 +27,7 @@ header {
   justify-content: center;
   background-color: #1c2b3a;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .navbar li {
@@ -63,6 +65,7 @@ header nav a:hover {
   background-color: #3d566e;
 }
 
+/* Main Content */
 main {
   padding: 20px;
   max-width: 1000px;
@@ -70,13 +73,6 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 8px;
-}
-
-.hero-img {
-  display: block;
-  margin: 0 auto 20px auto;
-  width: 80%; 
-  text-align: center;
 }
 
 section {
@@ -95,6 +91,7 @@ ul {
   line-height: 1.8;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 15px;
@@ -105,9 +102,9 @@ footer {
   width: 100%;
   margin-top: 40px;
   box-sizing: border-box;
-
 }
 
+/* Leader Cards Layout */
 .leader-list, .dlc {
   display: flex;
   flex-wrap: wrap;
@@ -122,15 +119,20 @@ footer {
   width: 280px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   box-sizing: border-box;
-
+  text-align: center;
 }
 
+/* Leader Images */
 .leader img {
   width: 100%;
+  height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
+  object-fit: cover;
+  display: block;
 }
 
+/* Figure Block (e.g., Intro Image) */
 figure {
   text-align: center;
   margin: 20px 0;
@@ -155,3 +157,4 @@ figure figcaption a {
   color: #2d3e50;
   text-decoration: underline;
 }
+
