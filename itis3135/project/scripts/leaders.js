@@ -11,7 +11,7 @@ const topLeaders = [
       civ: "Japan",
       style: "Domination",
       info: "Strong military and districts.",
-      photo: "https://static.fandomspot.com/images/10/54412/05-tokimune-japan-civ6-screenshot.jpg"
+      photo: "images/Hoki.jpg"
     },
     {
       name: "Pericles",
