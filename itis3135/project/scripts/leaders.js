@@ -4,14 +4,14 @@ const topLeaders = [
       civ: "Russia",
       style: "Science",
       info: "Great for religious/scientific play.",
-      photo: "images/peter.jpg"
+      photo: "https://www.gamersdecide.com/sites/default/files/authors/u151730/civ_6-peter3hd_0.jpg"
     },
     {
       name: "Hojo Tokimune",
       civ: "Japan",
       style: "Domination",
       info: "Strong military and districts.",
-      photo: "images/hojo.jpg"
+      photo: "https://www.pcgames.de/screenshots/1280x1024/2016/07/Civilization-6-Japan-und-Anfuehrer-Hojo-Tokimune-im-Video-vorgestellt.jpg"
     },
     {
       name: "Pericles",
