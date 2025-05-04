@@ -18,56 +18,56 @@ const topLeaders = [
       civ: "Greece",
       style: "Culture",
       info: "Culture through city-states.",
-      photo: "images/pericles.jpg"
+      photo: "https://forums.civfanatics.com/media/civ6-pericles.3805/full"
     },
     {
       name: "Matthias Corvinus",
       civ: "Hungary",
       style: "Domination",
       info: "Strong levied units.",
-      photo: "images/matthias.jpg"
+      photo: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/06/Civilization-6-Matthias-Corvinus-Hungary.png"
     },
     {
       name: "Catherine de Medici",
       civ: "France",
       style: "Culture",
       info: "Espionage and wonders.",
-      photo: "images/catherine.jpg"
+      photo: "https://wallpaperaccess.com/full/3118880.jpg"
     },
     {
       name: "Simon Bolivar",
       civ: "Gran Colombia",
       style: "Domination",
       info: "Fast-moving armies.",
-      photo: "images/bolivar.jpg"
+      photo: "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/05/civ_6_gran_colombia_leader.jpg"
     },
     {
       name: "Mansa Musa",
       civ: "Mali",
       style: "Gold",
       info: "Insane gold output and trade.",
-      photo: "images/mansa.jpg"
+      photo: "https://th.bing.com/th/id/R.f3a0c8ced21b475f89cdf5c13da0696e?rik=JnPVQPXa7YD8fA&riu=http%3a%2f%2fcdn.2kgames.com%2fcivilization.com%2fmalimansamusathumbnail.jpg&ehk=yYu337ppBhmZBmsoQsgoY55j84yTLXIsk4MTjoYEbwA%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       name: "Seondeok",
       civ: "Korea",
       style: "Science",
       info: "Strong science economy.",
-      photo: "images/seondeok.jpg"
+      photo: "https://outsidergaming.com/wp-content/uploads/2020/11/Civ-6-Best-Leader-in-Rise-and-Fall-Seondeok-of-Korea-768x432.jpg"
     },
     {
       name: "Basil II",
       civ: "Byzantium",
       style: "Religious Domination",
       info: "Religious military power.",
-      photo: "images/basil.jpg"
+      photo: "https://media.altchar.com/prod/images/940_530/gm-5e0be125-b8ed-41a8-963b-8ffd558084e4-civ-byz.jpg"
     },
     {
       name: "Lady Six Sky",
       civ: "Maya",
       style: "Science",
       info: "Strong early science.",
-      photo: "images/lady6sky.jpg"
+      photo: "https://twinfinite.net/wp-content/uploads/2020/05/Civilization-VI.jpg"
     }
   ];
   
