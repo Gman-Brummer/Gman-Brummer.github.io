@@ -8,36 +8,36 @@
     html {
       box-sizing: border-box;
     }
-  
+
     body, div, header, footer, main, nav, section, article, aside,
     h1, h2, h3, h4, h5, h6,
     p, ul, ol, li, img, a, span, button, input, textarea, select,
     form, table, tr, td, th {
       box-sizing: inherit;
     }
-  
+
     .container {
       position: relative;
       max-width: 900px;
-      margin: auto;
       height: 500px;
+      margin: auto;
       background-color: #000;
       overflow: hidden;
     }
-  
+
     .mySlides {
       display: none;
       height: 100%;
     }
-  
+
     .mySlides img {
-      max-height: 100%;
+      height: 100%;
       width: auto;
       display: block;
       margin: auto;
       object-fit: contain;
     }
-  
+
     .prev, .next {
       cursor: pointer;
       position: absolute;
@@ -51,21 +51,21 @@
       user-select: none;
       z-index: 10;
     }
-  
+
     .prev {
       left: 0;
       border-radius: 0 3px 3px 0;
     }
-  
+
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-  
+
     .prev:hover, .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-  
+
     .numbertext {
       color: #f2f2f2;
       font-size: 12px;
@@ -73,46 +73,25 @@
       position: absolute;
       top: 0;
     }
-  
+
     .caption-container {
       text-align: center;
       background-color: #222;
-      padding: 2px 16px;
+      padding: 8px 16px;
       color: white;
       font-weight: bold;
     }
-  
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  
-    .column {
-      float: left;
-      width: 16.66%;
-    }
-  
-    .demo {
-      opacity: 0.6;
-      width: 100%;
-      cursor: pointer;
-    }
-  
-    .active, .demo:hover {
-      opacity: 1;
-    }
-  
+
     nav a {
       margin-right: 12px;
     }
-  
+
     nav a.active {
       font-weight: bold;
       text-decoration: underline;
     }
   </style>
-  
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -127,27 +106,24 @@
     <p style="text-align: center;">Each image below represents a letter from my name using an everyday item.</p>
 
     <div class="container">
-      
-        <div class="mySlides"><div class="numbertext">1 / 14</div><img src="Images/GlassCup.jpg" alt="G - Glass" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">2 / 14</div><img src="Images/Ruler.png" alt="R - Ruler" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">3 / 14</div><img src="Images/Egg.jpg" alt="E - Egg" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">4 / 14</div><img src="Images/Yogurt.jpg" alt="Y - Yogurt" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">5 / 14</div><img src="Images/Scok.jpg" alt="S - Sock" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">6 / 14</div><img src="Images/Orange.jpg" alt="O - Orange" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">7 / 14</div><img src="Images/NightLight.jpg" alt="N - Night Light" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">8 / 14</div><img src="Images/Bagel.jpg" alt="B - Bagel" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">9 / 14</div><img src="Images/Rice.jpg" alt="R - Rice" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">10 / 14</div><img src="Images/Umbrella.jpg" alt="U - Umbrella" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">11 / 14</div><img src="Images/Mouse.jpg" alt="M - Mouse" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">12 / 14</div><img src="Images/Mouth.jpg" alt="M - Mouth Wash" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">13 / 14</div><img src="Images/Envelope.jpg" alt="E - Envelope" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        <div class="mySlides"><div class="numbertext">14 / 14</div><img src="Images/Remote.jpg" alt="R - Remote" style="max-height:500px; width:auto; display:block; margin:auto; object-fit:contain;"></div>
-        
-      
+      <div class="mySlides"><div class="numbertext">1 / 14</div><img src="Images/GlassCup.jpg" alt="G - Glass" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">2 / 14</div><img src="Images/Ruler.png" alt="R - Ruler" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">3 / 14</div><img src="Images/Egg.jpg" alt="E - Egg" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">4 / 14</div><img src="Images/Yogurt.jpg" alt="Y - Yogurt" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="Images/Scok.jpg" alt="S - Sock" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">6 / 14</div><img src="Images/Orange.jpg" alt="O - Orange" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">7 / 14</div><img src="Images/NightLight.jpg" alt="N - Night Light" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">8 / 14</div><img src="Images/Bagel.jpg" alt="B - Bagel" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">9 / 14</div><img src="Images/Rice.jpg" alt="R - Rice" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">10 / 14</div><img src="Images/Umbrella.jpg" alt="U - Umbrella" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">11 / 14</div><img src="Images/Mouse.jpg" alt="M - Mouse" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">12 / 14</div><img src="Images/Mouth.jpg" alt="M - Mouth Wash" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">13 / 14</div><img src="Images/Envelope.jpg" alt="E - Envelope" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <div class="mySlides"><div class="numbertext">14 / 14</div><img src="Images/Remote.jpg" alt="R - Remote" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-      
       <div class="caption-container">
         <p id="caption"></p>
       </div>
@@ -168,7 +144,6 @@
       Challenges: Coming up with ideas for letters such as Y and M.<br>
       I confirm this is my original work and I did not copy anyone else's code.
     </p>
-    
     <p><strong>Signed, Greyson Brummer - 05/08/2025 1:00 PM</strong></p>
   </main>
 
@@ -176,42 +151,42 @@
     <div data-include="components/footer.html"></div>
   </footer>
 
-  
   <script>
     let slideIndex = 1;
-  
+
     function showSlides(n) {
       const slides = document.getElementsByClassName("mySlides");
       const captionText = document.getElementById("caption");
-  
+
       if (n > slides.length) { slideIndex = 1; }
       if (n < 1) { slideIndex = slides.length; }
-  
+
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-  
+
       slides[slideIndex - 1].style.display = "block";
-  
-      const currentImg = slides[slideIndex - 1].querySelector("img");
+
+      const currentImg = slides[slideIndex - 1].getElementsByTagName("img")[0];
       captionText.textContent = currentImg ? currentImg.alt : "";
     }
-  
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-  
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-  
+
     document.addEventListener("DOMContentLoaded", function () {
       showSlides(slideIndex);
     });
   </script>
-  
+
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
+
 
 
