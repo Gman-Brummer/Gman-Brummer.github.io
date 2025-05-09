@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow - Greyson Brummer</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    .demo {
+      opacity: 0.6;
+      width: 100%;
+    }
+
+    .active, .demo:hover {
+      opacity: 1;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    nav a {
+      margin-right: 12px;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+    
+  </header>
+
+  <main>
+    <h2>Greyson Brummer - Slideshow</h2>
+    <p style="text-align: center;">Each image below represents a letter from my name using an everyday item.</p>
+
+    <div class="container">
+      <!-- Full-width slides -->
+      <div class="mySlides"><div class="numbertext">1 / 14</div><img src="images/GlassCup.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">2 / 14</div><img src="images/Ruler.png" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">3 / 14</div><img src="images/Egg.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">4 / 14</div><img src="images/Yogurt.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="images/Scok.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">6 / 14</div><img src="images/Orange.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">7 / 14</div><img src="images/NightLight.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">8 / 14</div><img src="images/Bagel.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">9 / 14</div><img src="images/Rice.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">10 / 14</div><img src="images/Umbrella.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">11 / 14</div><img src="images/Mouse.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">12 / 14</div><img src="images/Mouth.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">13 / 14</div><img src="images/Envelope.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">14 / 14</div><img src="images/Remote.jpg" style="width:100%"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column"><img class="demo cursor" src="images/GlassCup.jpg" onclick="currentSlide(1)" alt="G - Glass"></div>
+        <div class="column"><img class="demo cursor" src="images/Ruler.png" onclick="currentSlide(2)" alt="R - Ruler"></div>
+        <div class="column"><img class="demo cursor" src="images/Egg.jpg" onclick="currentSlide(3)" alt="E - Egg"></div>
+        <div class="column"><img class="demo cursor" src="images/Yogurt.jpg" onclick="currentSlide(4)" alt="Y - Yogurt"></div>
+        <div class="column"><img class="demo cursor" src="images/Scok.jpg" onclick="currentSlide(5)" alt="S - Sock"></div>
+        <div class="column"><img class="demo cursor" src="images/Orange.jpg" onclick="currentSlide(6)" alt="O - Orange"></div>
+        <div class="column"><img class="demo cursor" src="images/NightLight.jpg" onclick="currentSlide(7)" alt="N - Night Light"></div>
+        <div class="column"><img class="demo cursor" src="images/Bagel.jpg" onclick="currentSlide(8)" alt="B - Bagel"></div>
+        <div class="column"><img class="demo cursor" src="images/Rice.jpg" onclick="currentSlide(9)" alt="R - Rice"></div>
+        <div class="column"><img class="demo cursor" src="images/Umbrella.jpg" onclick="currentSlide(10)" alt="U - Umbrella"></div>
+        <div class="column"><img class="demo cursor" src="images/Mouse.jpg" onclick="currentSlide(11)" alt="M - Mouse"></div>
+        <div class="column"><img class="demo cursor" src="images/Mouth.jpg" onclick="currentSlide(12)" alt="M - Mouth Wash"></div>
+        <div class="column"><img class="demo cursor" src="images/Envelope.jpg" onclick="currentSlide(13)" alt="E - Envelope"></div>
+        <div class="column"><img class="demo cursor" src="images/Remote.jpg" onclick="currentSlide(14)" alt="R - Remote"></div>
+      </div>
+    </div>
+
+    <h3>Prompts & AI Tool</h3>
+    <ul>
+      <li>All images generated using openart.AI</li>
+      <li>Prompt: "Give me a simple picture of  [item] "</li>
+    </ul>
+
+    <h3>Notes</h3>
+    <p>
+      Help:
+      <ul>
+        <li>Sites: w3schools.com , Openart.AI</li>
+        
+      </ul>
+      Challenges:Coming up with ideas for letters such as Y and M <br>
+      I confirm this is my original work and I did not copy anyone else's code.
+    </p>
+    <p><strong>Signed, Greyson Brummer - 05/08/2025 1:00 PM</strong></p>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
