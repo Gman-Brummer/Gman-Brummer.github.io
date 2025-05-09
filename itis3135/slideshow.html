@@ -82,11 +82,7 @@
       font-weight: bold;
     }
 
-    nav a {
-      margin-right: 12px;
-    }
-
-    nav a.active {
+    nav .active {
       font-weight: bold;
       text-decoration: underline;
     }
@@ -158,8 +154,8 @@
       const slides = document.getElementsByClassName("mySlides");
       const captionText = document.getElementById("caption");
 
-      if (n > slides.length) { slideIndex = 1; }
-      if (n < 1) { slideIndex = slides.length; }
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
 
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -167,7 +163,7 @@
 
       slides[slideIndex - 1].style.display = "block";
 
-      const currentImg = slides[slideIndex - 1].getElementsByTagName("img")[0];
+      const currentImg = slides[slideIndex - 1].querySelector("img");
       captionText.textContent = currentImg ? currentImg.alt : "";
     }
 
@@ -179,7 +175,7 @@
       showSlides(slideIndex = n);
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", () => {
       showSlides(slideIndex);
     });
   </script>
@@ -187,6 +183,7 @@
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
+
 
 
 
