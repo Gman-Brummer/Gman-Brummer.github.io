@@ -82,24 +82,19 @@
       font-weight: bold;
     }
 
+    #caption {
+      margin: 0;
+    }
+
     nav .active {
       font-weight: bold;
       text-decoration: underline;
     }
-    #caption {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-
   </style>
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header>
     <div data-include="components/header.html"></div>
   </header>
@@ -109,26 +104,27 @@
     <p style="text-align: center;">Each image below represents a letter from my name using an everyday item.</p>
 
     <div class="container">
-      <div class="mySlides"><div class="numbertext">1 / 14</div><img src="Images/GlassCup.jpg" alt="G - Glass" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">2 / 14</div><img src="Images/Ruler.png" alt="R - Ruler" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">3 / 14</div><img src="Images/Egg.jpg" alt="E - Egg" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">4 / 14</div><img src="Images/Yogurt.jpg" alt="Y - Yogurt" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="Images/Scok.jpg" alt="S - Sock" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">6 / 14</div><img src="Images/Orange.jpg" alt="O - Orange" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">7 / 14</div><img src="Images/NightLight.jpg" alt="N - Night Light" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">8 / 14</div><img src="Images/Bagel.jpg" alt="B - Bagel" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">9 / 14</div><img src="Images/Rice.jpg" alt="R - Rice" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">10 / 14</div><img src="Images/Umbrella.jpg" alt="U - Umbrella" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">11 / 14</div><img src="Images/Mouse.jpg" alt="M - Mouse" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">12 / 14</div><img src="Images/Mouth.jpg" alt="M - Mouth Wash" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">13 / 14</div><img src="Images/Envelope.jpg" alt="E - Envelope" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
-      <div class="mySlides"><div class="numbertext">14 / 14</div><img src="Images/Remote.jpg" alt="R - Remote" style="height: 100%; width: auto; display: block; margin: auto; object-fit: contain;"></div>
+      <!-- Slide images -->
+      <div class="mySlides"><div class="numbertext">1 / 14</div><img src="Images/GlassCup.jpg" alt="G - Glass"></div>
+      <div class="mySlides"><div class="numbertext">2 / 14</div><img src="Images/Ruler.png" alt="R - Ruler"></div>
+      <div class="mySlides"><div class="numbertext">3 / 14</div><img src="Images/Egg.jpg" alt="E - Egg"></div>
+      <div class="mySlides"><div class="numbertext">4 / 14</div><img src="Images/Yogurt.jpg" alt="Y - Yogurt"></div>
+      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="Images/Scok.jpg" alt="S - Sock"></div>
+      <div class="mySlides"><div class="numbertext">6 / 14</div><img src="Images/Orange.jpg" alt="O - Orange"></div>
+      <div class="mySlides"><div class="numbertext">7 / 14</div><img src="Images/NightLight.jpg" alt="N - Night Light"></div>
+      <div class="mySlides"><div class="numbertext">8 / 14</div><img src="Images/Bagel.jpg" alt="B - Bagel"></div>
+      <div class="mySlides"><div class="numbertext">9 / 14</div><img src="Images/Rice.jpg" alt="R - Rice"></div>
+      <div class="mySlides"><div class="numbertext">10 / 14</div><img src="Images/Umbrella.jpg" alt="U - Umbrella"></div>
+      <div class="mySlides"><div class="numbertext">11 / 14</div><img src="Images/Mouse.jpg" alt="M - Mouse"></div>
+      <div class="mySlides"><div class="numbertext">12 / 14</div><img src="Images/Mouth.jpg" alt="M - Mouth Wash"></div>
+      <div class="mySlides"><div class="numbertext">13 / 14</div><img src="Images/Envelope.jpg" alt="E - Envelope"></div>
+      <div class="mySlides"><div class="numbertext">14 / 14</div><img src="Images/Remote.jpg" alt="R - Remote"></div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
       <div class="caption-container">
-        <p id="caption"></p>
+        <p id="caption">Caption will appear here</p>
       </div>
     </div>
 
