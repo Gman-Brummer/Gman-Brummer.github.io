@@ -161,6 +161,7 @@
 
   
   <script>
+    let slideIndex = 1;
     function showSlides(n) {
       let slides = document.getElementsByClassName("mySlides");
       let captionText = document.getElementById("caption");
@@ -189,7 +190,7 @@
       showSlides(slideIndex = n);
     }
 
-    let slideIndex = 1;
+    
     document.addEventListener("DOMContentLoaded", function () {
       showSlides(slideIndex);
     });
