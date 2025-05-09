@@ -103,7 +103,6 @@
 
   <header>
     <div data-include="components/header.html"></div>
-    
   </header>
 
   <main>
@@ -116,7 +115,7 @@
       <div class="mySlides"><div class="numbertext">2 / 14</div><img src="images/Ruler.png" style="width:100%"></div>
       <div class="mySlides"><div class="numbertext">3 / 14</div><img src="images/Egg.jpg" style="width:100%"></div>
       <div class="mySlides"><div class="numbertext">4 / 14</div><img src="images/Yogurt.jpg" style="width:100%"></div>
-      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="images/Scok.jpg" style="width:100%"></div>
+      <div class="mySlides"><div class="numbertext">5 / 14</div><img src="images/Sock.jpg" style="width:100%"></div>
       <div class="mySlides"><div class="numbertext">6 / 14</div><img src="images/Orange.jpg" style="width:100%"></div>
       <div class="mySlides"><div class="numbertext">7 / 14</div><img src="images/NightLight.jpg" style="width:100%"></div>
       <div class="mySlides"><div class="numbertext">8 / 14</div><img src="images/Bagel.jpg" style="width:100%"></div>
@@ -139,7 +138,7 @@
         <div class="column"><img class="demo cursor" src="images/Ruler.png" onclick="currentSlide(2)" alt="R - Ruler"></div>
         <div class="column"><img class="demo cursor" src="images/Egg.jpg" onclick="currentSlide(3)" alt="E - Egg"></div>
         <div class="column"><img class="demo cursor" src="images/Yogurt.jpg" onclick="currentSlide(4)" alt="Y - Yogurt"></div>
-        <div class="column"><img class="demo cursor" src="images/Scok.jpg" onclick="currentSlide(5)" alt="S - Sock"></div>
+        <div class="column"><img class="demo cursor" src="images/Sock.jpg" onclick="currentSlide(5)" alt="S - Sock"></div>
         <div class="column"><img class="demo cursor" src="images/Orange.jpg" onclick="currentSlide(6)" alt="O - Orange"></div>
         <div class="column"><img class="demo cursor" src="images/NightLight.jpg" onclick="currentSlide(7)" alt="N - Night Light"></div>
         <div class="column"><img class="demo cursor" src="images/Bagel.jpg" onclick="currentSlide(8)" alt="B - Bagel"></div>
@@ -155,17 +154,16 @@
     <h3>Prompts & AI Tool</h3>
     <ul>
       <li>All images generated using openart.AI</li>
-      <li>Prompt: "Give me a simple picture of  [item] "</li>
+      <li>Prompt: "Give me a simple picture of [item]"</li>
     </ul>
 
     <h3>Notes</h3>
     <p>
       Help:
       <ul>
-        <li>Sites: w3schools.com , Openart.AI</li>
-        
+        <li>Sites: w3schools.com, openart.AI</li>
       </ul>
-      Challenges:Coming up with ideas for letters such as Y and M <br>
+      Challenges: Coming up with ideas for letters such as Y and M<br>
       I confirm this is my original work and I did not copy anyone else's code.
     </p>
     <p><strong>Signed, Greyson Brummer - 05/08/2025 1:00 PM</strong></p>
@@ -188,23 +186,23 @@
     }
 
     function showSlides(n) {
-      let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("demo");
       let captionText = document.getElementById("caption");
       if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
+      for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
+      for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
   </script>
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
+
