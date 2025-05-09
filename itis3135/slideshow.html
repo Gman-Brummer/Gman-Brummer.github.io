@@ -5,13 +5,17 @@
   <title>Slideshow - Greyson Brummer</title>
   <link rel="stylesheet" href="styles/default.css">
   <style>
-    html {
+   html {
   box-sizing: border-box;
     }
 
-    *, *::before, *::after {
+    body, div, header, footer, main, nav, section, article, aside,
+    h1, h2, h3, h4, h5, h6,
+    p, ul, ol, li, img, a, span, button, input, textarea, select,
+    form, table, tr, td, th {
   box-sizing: inherit;
     }
+
 
 
     .container {
@@ -100,6 +104,14 @@
       font-weight: bold;
       text-decoration: underline;
     }
+    .mySlides img {
+  width: 100%;
+  max-height: 500px; 
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
