@@ -179,39 +179,37 @@
   
   <script>
     let slideIndex = 1;
+  
     function showSlides(n) {
-      let slides = document.getElementsByClassName("mySlides");
-      let captionText = document.getElementById("caption");
-      let dots = document.getElementsByClassName("demo");
-
+      const slides = document.getElementsByClassName("mySlides");
+      const captionText = document.getElementById("caption");
+  
       if (n > slides.length) { slideIndex = 1; }
       if (n < 1) { slideIndex = slides.length; }
-
+  
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-
+  
       slides[slideIndex - 1].style.display = "block";
-      captionText.innerHTML = slides[slideIndex - 1].querySelector("img").alt;
+  
+      const currentImg = slides[slideIndex - 1].querySelector("img");
+      captionText.textContent = currentImg ? currentImg.alt : "";
     }
-
+  
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-
+  
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-
-    
+  
     document.addEventListener("DOMContentLoaded", function () {
       showSlides(slideIndex);
     });
   </script>
+  
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
