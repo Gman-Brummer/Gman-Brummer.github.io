@@ -14,7 +14,11 @@ class SandwichMachine:
         self.machine_resources = dict(machine_resources)
 
     def check_resources(self, ingredients):
-        pass
+        for item, needed in ingredients.items():
+            if self.machine_resources.get(item, 0) < needed:
+                print(f"Sorry there is not enough {item}.")
+                return False
+        return True
 
     def process_coins(self):
         pass
