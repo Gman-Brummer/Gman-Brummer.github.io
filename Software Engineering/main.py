@@ -34,7 +34,14 @@ class SandwichMachine:
         return total
 
     def transaction_result(self, coins, cost):
-        pass
+        if coins >= cost:
+            change = round(coins - cost, 2)
+            if change > 0:
+                print(f"Here is ${change:.2f} in change.")
+            return True
+        else:
+            print("Sorry, that's not enough money. Money refunded.")
+            return False
 
     def make_sandwich(self, sandwich_size, order_ingredients):
         pass
