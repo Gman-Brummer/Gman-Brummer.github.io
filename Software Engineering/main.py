@@ -21,7 +21,17 @@ class SandwichMachine:
         return True
 
     def process_coins(self):
-        pass
+        try:
+            dollars = int(input("how many large dollars?: ").strip() or "0")
+            half = int(input("how many half dollars?: ").strip() or "0")
+            quarters = int(input("how many quarters?: ").strip() or "0")
+            nickels = int(input("how many nickels?: ").strip() or "0")
+        except ValueError:
+            print("Invalid input, assuming 0.")
+            return 0.0
+        total = dollars * 1.0 + half * 0.5 + quarters * 0.25 + nickels * 0.05
+        total = round(total, 2)
+        return total
 
     def transaction_result(self, coins, cost):
         pass
