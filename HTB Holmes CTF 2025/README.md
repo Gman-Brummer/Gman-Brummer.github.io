@@ -1,7 +1,10 @@
 # Holmes CTF 2025
 
-![Holmes CTF 2025 Banner](./assets/holmes-banner.jpg)  
-_HTB’s first all-blue CTF_
+<p align="center">
+  <img src="./assets/holmes-banner.jpg" alt="Holmes CTF 2025 Banner" width="800">
+</p>
+<p align="center"><em>HTB’s first all-blue CTF</em></p>
+
 
 ---
 
