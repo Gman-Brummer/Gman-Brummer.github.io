@@ -16,4 +16,7 @@
 - Opening the log in Event Viewer, we can filter for the Event ID of Process Creations (4688).
 - From the pervious challanges we know the attacker is using the computer "Heisen-9-WS-6" so we can filter for logs only containing this computer
 
+![First filter](echo_images/Task1-2.png)
+
+
 
